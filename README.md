@@ -7,13 +7,12 @@ A command line application that looks up Rainbow Six Siege player stats using th
 - libcurl
 - nlohmann/json
 - libpq (PostgreSQL)
+- G++ Compiler
 
 ## Setup
-1. Install PostgreSQL
-2. Install dependencies...
-3. Update connection string in main.cpp
+1. Install PostgreSQL application
+2. Setup pgAdmin server and database
+3. Install libcurl, nlohmann, and libpq
+4. Use cmake to link and build everything together
 
-## Usage
-1. Run the program
-2. Enter your R6 username
-3. Enter your platform (uplay, psn, xbl)
+
