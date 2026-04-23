@@ -1,10 +1,11 @@
 cmake_minimum_required(VERSION 3.15)
 
-# Your project name
-project(temp)
+project(myapp)
 
-# Use C++17
 set(CMAKE_CXX_STANDARD 17)
 
-# Create an executable from main.cpp
-add_executable(temp main.cpp)
+find_package(CURL CONFIG REQUIRED)
+find_package(libpqxx CONFIG REQUIRED)
+
+add_executable(myapp main.cpp)
+target_link_libraries(myapp CURL::libcurl libpqxx::pqxx PostgreSQL::PostgreSQL)
