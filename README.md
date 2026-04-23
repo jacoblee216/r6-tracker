@@ -1,13 +1,16 @@
 # R6 Stats Tracker
 
-A command line application that looks up Rainbow Six Siege player stats using the R6Data API.
+A command line application that looks up and saves R6 player stats using a R6 API.
 
 ## Technologies Used
 - C++
+- PostgreSQL
+- G++ Compiler
+
+## Libraries Used
 - libcurl
 - nlohmann/json
 - libpq (PostgreSQL)
-- G++ Compiler
 
 ## Setup
 1. Install PostgreSQL application
